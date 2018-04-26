@@ -1,0 +1,49 @@
+/* pages/movie-list/movie-list.wxss */
+@import '../movie-rating/movie-rating.wxss';
+.list-wrapper {
+  width: 100%;
+  padding: 20rpx 30rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  border-bottom: 1rpx solid #ccc;
+}
+.list-poster {
+  width: 160rpx;
+  height: 240rpx;
+  margin-right: 20rpx;
+}
+.list-poster image {
+  width: 100%;
+  height: 100%;
+}
+.list-desc {
+  display: flex;
+  font-size: 28rpx;
+  color: #999;
+  width: 380rpx;
+  flex-direction: column;
+}
+.list-desc .list-desc-title {
+  font-size: 36rpx;
+  color: #666;
+  font-weight: 600;
+}
+.list-desc .list-desc-casts {
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.list-desc .list-desc-count {
+  font-size: 24rpx;
+  color: greenyellow;
+}
+.list-btn {
+  border-radius: 4rpx;
+  padding: 10rpx 20rpx;
+  border: 1rpx solid greenyellow;
+  font-size: 26rpx;
+  color: greenyellow;
+}

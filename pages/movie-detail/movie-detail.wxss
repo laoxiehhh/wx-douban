@@ -1,0 +1,130 @@
+/* pages/movie-detail/movie-detail.wxss */
+@import '../movie-rating/movie-rating.wxss';
+.detail-wrapper {
+   width: 100%; 
+}
+.detail-poster {
+  width: 100%;
+  background-color: #888;
+  text-align: center;
+  padding: 40rpx 0;
+  box-sizing: border-box;
+}
+.detail-poster image {
+  width: 300rpx;
+  height: 400rpx;
+}
+.detail-content {
+  width: 100%;
+}
+.content-top {
+  width: 100%;
+  padding-top: 40rpx;
+  display: flex;
+  flex-direction: row;
+}
+.content-top .top-left {
+  width: 300rpx;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50rpx;
+
+}
+.content-top .top-left .top-left-title {
+  font-size: 42rpx;
+  color: #666;
+  font-weight: 600;
+}
+.content-top .top-left .top-left-text {
+  font-size: 28rpx;
+  color: #999;
+}
+.content-top .top-right {
+  width: 190rpx;
+  border: 2rpx solid #ccc;
+  box-shadow: 2px 2px 5px #888888;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 145rpx;
+}
+.content-top .top-right .top-right-average {
+  font-size: 38rpx;
+  color: #000;
+  font-weight: 700;
+}
+.content-top .top-right .top-right-count {
+  font-size: 24rpx;
+  color: #000;
+}
+.content-middle {
+  width: 100%;
+  margin: 50rpx 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.content-middle .middle-btn {
+  width: 190rpx;
+  height: 70rpx;
+  margin: 0 70rpx;
+  border: 2rpx solid orange;
+  color: orange;
+  text-align: center;
+  line-height: 70rpx;
+  border-radius: 10rpx;
+}
+.content-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0 50rpx;
+}
+.content-bottom .bottom-title {
+  font-size: 38rpx;
+  color: #999;
+  font-weight: 600;
+  margin-bottom: 15rpx;
+}
+.content-bottom .bottom-summary {
+  font-size: 28rpx;
+  color: #888;
+  text-indent: 50rpx;
+   height: 115rpx;
+  overflow: hidden; 
+}
+ .content-bottom text.more {
+  overflow: visible;
+  height: auto; 
+} 
+.content-bottom .bottom-more {
+  font-size: 38rpx;
+  color: greenyellow;
+  margin-top: 15rpx;
+}
+.detail-person {
+  box-sizing: border-box;
+  width: 100%; 
+  padding: 40rpx 50rpx;
+  white-space: nowrap;
+}
+.detail-person .person-title {
+  font-size: 38rpx;
+  color: #999;
+  font-weight: 600;
+  margin-bottom: 15rpx;
+  display: block;
+}
+.detail-person .person-list {
+  width: 100%;
+  white-space: nowrap;
+}
+.detail-person .person-list image{
+  display: inline-block;
+  width: 200rpx;
+  height: 300rpx;
+  margin-right: 20rpx;
+}

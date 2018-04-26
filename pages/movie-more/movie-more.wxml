@@ -1,0 +1,22 @@
+<!--pages/movie-more/movie-more.wxml-->
+<import src="../movie-list/movie-list.wxml"/>
+<view class='more-wrapper'>
+  <view class='more-title'>
+    <view class='{{showing ? "selected" : ""}}' bindtap='toShowing'>正在热映</view>
+    <view class='{{coming ? "selected" : ""}}' bindtap='toComing'>即将上映</view>
+  </view>
+  <view class='more-content'>
+    <scroll-view class='more-scroll' scroll-y bindscrolltolower="loadMore">
+       <view wx:if="{{showing}}"> 
+        <block wx:for="{{intheaters.movies}}" wx:key="id">
+          <template is="movie-list" data="{{...item, showing}}"></template>
+        </block>
+       </view> 
+       <view wx:if="{{coming}}">
+        <block wx:for="{{comingSoon.movies}}" wx:key="id">
+          <template is="movie-list" data="{{...item, coming}}"></template>
+        </block>
+       </view>
+    </scroll-view>
+  </view>
+</view>

@@ -1,0 +1,29 @@
+/* pages/movie-grid/movie-grid.wxss */
+@import '../movie-rating/movie-rating.wxss';
+.grid-wrapper {
+  display: inline-block;
+   margin: 0 10rpx; 
+}
+.grid-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grid-content image {
+  width: 200rpx;
+  height: 280rpx;
+}
+.grid-content .movie-title {
+  width: 200rpx;
+  color: #4a4a4a;
+  font-weight: 600;
+  font-size: 28rpx;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.grid-content .wish-count {
+  color: #9e9e9e;
+  font-size: 24rpx;
+}

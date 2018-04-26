@@ -1,0 +1,41 @@
+<!--pages/movie-detail/movie-detail.wxml-->
+<import src="../movie-rating/movie-rating.wxml" />
+<view class='detail-wrapper'>
+  <scroll-view scroll-y>
+    <view class='detail-poster'>
+      <image src="{{movie.image}}"></image>
+    </view>
+    <view class='detail-content'>
+      <view class='content-top'>
+        <view class='top-left'>
+          <text class='top-left-title'>{{movie.title}}</text>
+          <text class='top-left-text'>{{movie.desc}}</text>
+          <text class='top-left-text'>{{movie.original_title}}</text>
+          <text class='top-left-text'>{{movie.countries}}</text>
+        </view>
+        <view class='top-right'>
+          <text class='top-right-average'>{{rating.average}}</text>
+          <template is="movie-rating" data="{{rating, key}}"></template>
+          <text class='top-right-count'>{{movie.count}}人</text>
+        </view>
+      </view>
+      <view class='content-middle'>
+        <view class='middle-btn' bindtap='wantSee'>想看</view>
+        <view class='middle-btn' bindtap='haveSeen'>看过</view>
+      </view>
+      <view class='content-bottom'>
+        <text class='bottom-title'>简介</text>
+        <text class='bottom-summary {{more ? "more" : ""}}'>{{movie.summary}}</text>
+        <text class='bottom-more' bindtap='textMore'>展开</text>
+      </view>
+    </view>
+    <view class='detail-person'>
+      <text class='person-title'>影人</text>
+      <scroll-view scroll-x class='person-list'>
+        <block wx:for="{{movie.casts}}" wx:key="id">
+          <image src="{{item.avatars.medium}}"></image>
+        </block>
+      </scroll-view>
+    </view>
+  </scroll-view>
+</view>

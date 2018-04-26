@@ -1,0 +1,46 @@
+/* pages/home/home.wxss */
+@import '../movie-grid/movie-grid.wxss';
+page {
+  font-size: 32rpx;
+  background-color: #f8f8f8;
+}
+.wrapper {
+  display: flex;
+  height: 100%;
+  width: 100;
+  flex-direction: column;
+}
+.session-movie {
+  border-width: 1rpx 0;
+  border-color: #e6e6e6;
+  border-style: solid;
+  padding-bottom: 30rpx;
+  margin-bottom: 30rpx;
+  background-color: #fff;
+
+}
+.session-header {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 30rpx;
+}
+.content-name {
+  color: #4a4a4a;
+  flex: 1;
+  font-weight: 500;
+  font-size: 36rpx;
+}
+.content-more {
+  color: #32cd32;
+}
+.movie-content {
+  width: 100%;
+  white-space: nowrap;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+}
+.content-scroll {
+  white-space: nowrap;
+  width: 100%;
+}

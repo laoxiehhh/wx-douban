@@ -1,0 +1,21 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/movie-more/movie-more",
+    "pages/index/index",
+   
+    "pages/logs/logs",
+    "pages/search/search",
+    "pages/movie-grid/movie-grid",
+    "pages/movie-rating/movie-rating",
+    "pages/movie-list/movie-list",
+    "pages/movie-detail/movie-detail"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

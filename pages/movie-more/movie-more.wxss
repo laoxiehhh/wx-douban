@@ -1,0 +1,27 @@
+/* pages/movie-more/movie-more.wxss */
+@import '../movie-list/movie-list.wxss';
+.more-wrapper {
+  width: 100%;
+}
+.more-title {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #ccc;
+}
+.more-title view{
+  flex-grow: 1;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #888;
+  font-weight: 600;
+}
+.more-title view.selected {
+  color: green;
+  border-bottom: 4rpx solid green;
+}
+.more-scroll {
+  height: 100vh;
+}
